@@ -11,6 +11,7 @@ if (etaUser <= 17) {
     document.getElementById('travel').innerHTML = totEuro
 
 } else if (etaUser >= 65) {
+    let meterEuro = meterUser * 0.21;
     let discountMag = (meterEuro * 40) / 100;
     totEuro = meterEuro - discountMag;
     totEuro = totEuro.toFixed(2)
