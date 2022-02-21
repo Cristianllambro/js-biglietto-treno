@@ -10,9 +10,12 @@ if (etaUser <= 17) {
     totEuro = totEuro.toFixed(2)
     document.getElementById('travel').innerHTML = totEuro
 
-} else (etaUser >= 65)
-    let meterEuro = meterUser * 0.21;
+} else if (etaUser >= 65) {
     let discountMag = (meterEuro * 40) / 100;
     totEuro = meterEuro - discountMag;
     totEuro = totEuro.toFixed(2)
     document.getElementById('travel').innerHTML = totEuro
+} else {
+    let meterEuro = meterUser * 0.21;
+    document.getElementById('travel').innerHTML = meterEuro
+}
