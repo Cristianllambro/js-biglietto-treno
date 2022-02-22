@@ -1,5 +1,5 @@
 let meterUser = prompt('chilometri percorsi?')
-let etaUser = prompt('eta passeggero?')
+let etaUser = prompt('età passeggero?')
 
 
 
